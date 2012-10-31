@@ -57,7 +57,7 @@ $feed->handle_content_type();
     <title>I can has web - work of Arne Hassel</title>
     <link rel="stylesheet" type="text/css" media="all" href="minimalist/style.css" />
     <link rel="stylesheet" type="text/css" media="all and (min-width: 30em)" href="minimalist/style.medium.css" />
-    <link rel="stylesheet" type="text/css" media="all and (min-width: 50em)" href="minimalist/style.large.css" />
+    <link rel="stylesheet" type="text/css" media="all and (min-width: 51em)" href="minimalist/style.large.css" />
 </head>
 
 <body>
@@ -89,31 +89,35 @@ $feed->handle_content_type();
                                     <div class="triangle"></div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="http://icanhasweb.net/blog/about/">
+                                    About
+                                    <div class="triangle"></div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav><!-- #MasterNavigation -->
             </header><!-- #MasterHeader -->
             <aside class="block-content">
-                <p>Welcome to icanhasweb.net, my little spot on the internet. My name is Arne Hassel, and this website is my attempt to present myself and my projects.</p>
-                <p>I maintain two blogs here, <a href="/blog/">one in english</a> and <a href="/megoth/">one in norwegian</a>. The former focuses on web technologies and software programming, while the latter is a personal blog.</p>
-                <p>I've also published my master thesis here, <a href="/graphitethesis/">A JavaScript API for accessing Semantic Web</a>. May be of interest.</p>
-                <p>On this page you'll find a list of the latest posts from these blogs. There's also a list of links in <a href="#MasterFooter">the footer</a> that may be of interest.</p>
+                <p><a href="http://icanhasweb.net">icanhasweb.net</a> is the online home of <a href="mailto:arne.hassel@gmail.com">Arne Hassel</a>, a web developer living and working in Oslo, Norway.</p>
             </aside>
         </div>
         <div class="grid-item" id="MasterContent">
             <div id="primary">
-                <div id="content" role="main">
+                <div id="RssBody" role="main">
                     <?php if ($feed->error()) : ?>
                     <div class="alert">
                         <p><?php echo htmlspecialchars($feed->error()); ?></p>
                     </div>
                     <?php endif; ?>
                     <?php if ($success) : ?>
-                    <hgroup>
+                    <hgroup class="rss-header">
                         <?php if ($feed->get_link()): ?>
                         <h2 class="header">
                             <a href="<?php echo $feed->get_link(); ?>"><?php echo $feed->get_title(); ?></a>
                         </h2>
+                        <h4><?php echo $feed->get_description(); ?></h4>
                         <?php endif; ?>
                     </hgroup>
                     <ul id="RssList">
