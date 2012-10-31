@@ -50,9 +50,10 @@ $feed->handle_content_type();
 // When we end our PHP block, we want to make sure our DOCTYPE is on the top line to make
 // sure that the browser snaps into Standards Mode.
 ?><!DOCTYPE html>
-
-<html lang="en-US">
+<html dir="ltr" lang="en-US">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>I can has web - work of Arne Hassel</title>
     <link rel="stylesheet" type="text/css" media="all" href="minimalist/style.css" />
     <link rel="stylesheet" type="text/css" media="all and (min-width: 30em)" href="minimalist/style.medium.css" />
@@ -71,7 +72,7 @@ $feed->handle_content_type();
                             <span class="second">HAS WEB</span>
                         </a>
                     </h1>
-                    <h3 id="site-description">Arne Hassel on developing for the web</h3>
+                    <h3 id="site-description">Arne Hassel on the web</h3>
                 </hgroup>
                 <nav class="grid-item" id="MasterNavigation" role="navigation">
                     <div class="menu-main-container">
@@ -95,6 +96,7 @@ $feed->handle_content_type();
             <aside class="block-content">
                 <p>Welcome to icanhasweb.net, my little spot on the internet. My name is Arne Hassel, and this website is my attempt to present myself and my projects.</p>
                 <p>I maintain two blogs here, <a href="/blog/">one in english</a> and <a href="/megoth/">one in norwegian</a>. The former focuses on web technologies and software programming, while the latter is a personal blog.</p>
+                <p>I've also published my master thesis here, <a href="/graphitethesis/">A JavaScript API for accessing Semantic Web</a>. May be of interest.</p>
                 <p>On this page you'll find a list of the latest posts from these blogs. There's also a list of links in <a href="#MasterFooter">the footer</a> that may be of interest.</p>
             </aside>
         </div>
@@ -160,6 +162,9 @@ $feed->handle_content_type();
                 </li>
                 <li>
                     <a href="http://www.facebook.com/arne.hassel">facebook</a>
+                </li>
+                <li>
+                    <a href="https://github.com/megoth/">github</a>
                 </li>
                 <li>
                     <a href="linkedin.com/in/arnehassel">linkedin</a>
