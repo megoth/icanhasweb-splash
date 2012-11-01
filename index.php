@@ -72,7 +72,7 @@ $feed->handle_content_type();
                             <span class="second">HAS WEB</span>
                         </a>
                     </h1>
-                    <h3 id="site-description">Arne Hassel on the web</h3>
+                    <h3 class="site-description">Arne Hassel on the web</h3>
                 </hgroup>
                 <nav class="grid-item" id="MasterNavigation" role="navigation">
                     <div class="menu-main-container">
