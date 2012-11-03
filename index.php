@@ -104,12 +104,14 @@ $feed->handle_content_type();
             </aside>
         </div>
         <div class="grid-item" id="MasterContent">
-            <div id="primary" class="block-content">
-                <h2>Welcome to icanhasweb.net</h2>
-                <p>Here you'll find my two blogs and <a href="http://icanhasweb.net/graphitethesis/">the thesis I wrote as part of my master degree</a>. I also hope to include some of my projects in the future, so stay tuned (e.g. by <a href="http://twitter.com/icanhasweb">following me on twitter</a>).</p>
-                <p>The first blog, simply named <a href="http://icanhasweb.net/blog/">Blog</a>, is where I write english posts. I intend to write about web technologies and related topics, i.e. topics that are related to my professional life.</p>
-                <p>The second blog is my norwegian blog, named <a href="http://icanhasweb.net/megoth/">[megoth]</a> (a nickname I use in many forums). It will focus more on my personal life, and as I'm situated in Norway, it will focus on my life here.</p>
-                <p>Below you'll find the latest 10 posts from the aforementioned blogs, fetched from their respective feeds.</p>
+            <div id="primary">
+                <div class="block-content" id="SplashHeader">
+                    <h2>Welcome to icanhasweb.net</h2>
+                    <p>Here you'll find my two blogs and <a href="http://icanhasweb.net/graphitethesis/">the thesis I wrote as part of my master degree</a>. I also hope to include some of my projects in the future, so stay tuned (e.g. by <a href="http://twitter.com/icanhasweb">following me on twitter</a>).</p>
+                    <p>The first blog, simply named <a href="http://icanhasweb.net/blog/">Blog</a>, is where I write english posts. I intend to write about web technologies and related topics, i.e. topics that are related to my professional life.</p>
+                    <p>The second blog is my norwegian blog, named <a href="http://icanhasweb.net/megoth/">[megoth]</a> (a nickname I use in many forums). It will focus on my personal life.</p>
+                    <p>Below you'll find the latest 10 posts from the aforementioned blogs, fetched from their respective feeds.</p>
+                </div>
                 <div id="RssBody" role="main">
                     <?php if ($feed->error()) : ?>
                     <div class="alert">
@@ -136,7 +138,7 @@ $feed->handle_content_type();
                             <div>
                                 <span class="footnote">Written <?php echo $item->get_date(); ?></span>
                             </div>
-                            <div>
+                            <div class="block-content">
                                 <p>
                                     <?php
                                     $content = strip_tags($item->get_content());
