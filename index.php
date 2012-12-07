@@ -61,58 +61,18 @@ $feed->handle_content_type();
 </head>
 
 <body>
-<div id="MasterContainer" class="block-container">
+<div id="SplashContainer" class="block-container">
     <div class="container-inner grid-row">
-        <div class="grid-item">
-            <header class="grid-row" id="MasterHeader" role="banner">
-                <hgroup class="grid-item">
-                    <h1>
-                        <a href="http://icanhasweb.net/" title="icanhasweb" rel="home">
-                            <span class="first">I CAN</span>
-                            <span class="second">HAS WEB</span>
-                        </a>
-                    </h1>
-                    <h3 class="site-description">Arne Hassel on the web</h3>
-                </hgroup>
-                <nav class="grid-item" id="MasterNavigation" role="navigation">
-                    <div class="menu-main-container">
-                        <ul id="menu-main" class="nav menu">
-                            <li>
-                                <a href="http://icanhasweb.net/blog/">
-                                    Blog
-                                    <div class="triangle"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://icanhasweb.net/megoth/">
-                                    [megoth]
-                                    <div class="triangle"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://icanhasweb.net/blog/about/">
-                                    About
-                                    <div class="triangle"></div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav><!-- #MasterNavigation -->
-            </header><!-- #MasterHeader -->
-            <aside class="block-content">
-                <p><a href="http://icanhasweb.net">icanhasweb.net</a> is the online home of <a href="mailto:arne.hassel@gmail.com">Arne Hassel</a>, a web developer living and working in Oslo, Norway.</p></p>
-            </aside>
-        </div>
-        <div class="grid-item" id="MasterContent">
+        <div class="grid-item" id="SplashContent" role="main">
             <div id="primary">
-                <div class="block-content" id="SplashHeader">
+                <div class="block-content">
                     <h2>Welcome to icanhasweb.net</h2>
-                    <p>Here you'll find my two blogs and <a href="http://icanhasweb.net/graphitethesis/">the thesis I wrote as part of my master degree</a>. I also hope to include some of my projects in the future, so stay tuned (e.g. by <a href="http://twitter.com/icanhasweb">following me on twitter</a>).</p>
-                    <p>The first blog, simply named <a href="http://icanhasweb.net/blog/">Blog</a>, is where I write english posts. I intend to write about web technologies and related topics, i.e. topics that are related to my professional life.</p>
-                    <p>The second blog is my norwegian blog, named <a href="http://icanhasweb.net/megoth/">[megoth]</a> (a nickname I use in many forums). It will focus on my personal life.</p>
-                    <p>Below you'll find the latest 10 posts from the aforementioned blogs, fetched from their respective feeds.</p>
+                    <p>Here you'll find my two blogs and other projects I've made available. I hope to include some of my projects in the future, so stay tuned (e.g. by following me on <a href="http://twitter.com/icanhasweb">twitter</a>, or subscribing <a href="http://icanhasweb.net/blog/feed/">the feed of my professional blog</a>).</p>
+                    <p>The first blog, simply named <a href="http://icanhasweb.net/blog/">Blog</a>, is my professional blog. I write about web technologies, such as JavaScript, <abbr title="Cascading Style Sheets">CSS</abbr>, .NET, Semantic Web, and related topics, i.e. topics that are related to my professional life. It's in english.</p>
+                    <p>The second blog is my personal blog, named <a href="http://icanhasweb.net/megoth/">megoth</a> (a nickname I use in many forums). It's written in norwegian..</p>
+                    <p>As a taste of my writings, below are the latest 10 posts from the aforementioned blogs, fetched from their respective feeds.</p>
                 </div>
-                <div id="RssBody" role="main">
+                <div id="SplashBody" role="main">
                     <?php if ($feed->error()) : ?>
                     <div class="alert">
                         <p><?php echo htmlspecialchars($feed->error()); ?></p>
@@ -127,7 +87,7 @@ $feed->handle_content_type();
                         <h4><?php echo $feed->get_description(); ?></h4>
                         <?php endif; ?>
                     </hgroup>
-                    <ul id="RssList">
+                    <ul id="SplashList">
                         <?php foreach($feed->get_items() as $item): ?>
                         <li class="chunk" data-url="<?php echo $item->get_permalink(); ?>">
                             <hgroup>
@@ -160,32 +120,137 @@ $feed->handle_content_type();
                     <?php endif; ?>
                 </div><!-- #content -->
             </div><!-- #primary -->
-        </div><!-- #MasterContent -->
+        </div><!-- #SplashContent -->
+        <div class="grid-item" id="SplashSidebar">
+            <header id="SplashHeader" role="banner">
+                <hgroup class="grid-item">
+                    <h1>
+                        <a href="http://icanhasweb.net/" title="icanhasweb" rel="home">
+                            <span class="first">I CAN</span>
+                            <span class="second">HAS WEB</span>
+                        </a>
+                    </h1>
+                    <h3 class="site-description">Arne Hassel on the web</h3>
+                </hgroup>
+                <nav class="grid-item navigation-main" id="SplashNavigation" role="navigation">
+                    <ul id="menu-main" class="nav menu">
+                        <li>
+                            <a href="http://icanhasweb.net/blog/">
+                                Blog
+                                <div class="triangle"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://icanhasweb.net/megoth/">
+                                megoth
+                                <div class="triangle"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav><!-- #MasterNavigation -->
+            </header><!-- #MasterHeader -->
+            <div class="grid-row">
+                <aside class="block-content grid-item">
+                    <h3>About</h3>
+                    <p><a href="http://icanhasweb.net">icanhasweb.net</a> is the online home of <a href="mailto:arne.hassel@gmail.com">Arne Hassel</a>, a web developer living and working in Oslo, Norway.</p></p>
+                </aside>
+                <aside class="block-content grid-item">
+                    <h3>Photo</h3>
+                    <p>Yours truly.</p>
+                    <div class="block-photo">
+                        <img alt="A photo of me" src="img/uio200_200px.jpg" />
+                    </div>
+                </aside>
+            </div>
+            <div class="grid-row">
+                <aside class="grid-item">
+                    <div class="block-content">
+                        <h3>Profiles</h3>
+                        <p>My public profiles on the web.</p>
+                    </div>
+                    <nav class="tabbable">
+                        <ul class="nav nav-stacked nav-pills menu">
+                            <li>
+                                <a href="http://about.me/megoth/">about.me</a>
+                            </li>
+                            <li>
+                                <a href="http://delicious.com/megoth/">delicious</a>
+                            </li>
+                            <li>
+                                <a href="http://www.facebook.com/arne.hassel">facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/megoth/">github</a>
+                            </li>
+                            <li>
+                                <a href="http://linkedin.com/in/arnehassel">linkedin</a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com/megoth/">twitter</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <aside class="grid-item">
+                    <div class="block-content">
+                        <h3>Work</h3>
+                        <p>Projects I've contributed to.</p>
+                    </div>
+                    <nav class="tabbable">
+                        <ul class="nav nav-stacked nav-pills menu">
+                            <li>
+                                <a href="http://communicaretools.org">CommuniCare tools</a>
+                            </li>
+                            <li>
+                                <a href="http://communicaretools.org/connect">Connect</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/megoth/graphitejs">graphitejs</a>
+                            </li>
+                            <li>
+                                <a href="http://holderdeord.no">Holder de ord</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/megoth/minimalist">minimalist</a>
+                            </li>
+                            <li>
+                                <a href="http://communicaretools.org/webchoice">WebChoice</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+            <div class="grid-row">
+                <aside class="grid-item">
+                    <div class="block-content">
+                        <h3>Content</h3>
+                        <p>Content on this site.</p>
+                    </div>
+                    <nav class="tabbable">
+                        <ul class="nav nav-stacked nav-pills menu">
+                            <li>
+                                <a href="http://icanhasweb.net/blog/">Blog</a>
+                            </li>
+                            <li>
+                                <a href="http://icanhasweb.net/graphitethesis/">Master Thesis</a>
+                            </li>
+                            <li>
+                                <a href="http://icanhasweb.net/blog/">megoth</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <aside class="block-content grid-item">
+                    <h3>Copyright</h3>
+                    <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
+                </aside>
+            </div>
+        </div>
     </div><!-- .container-inner -->
     <div class="push"></div>
 </div>
 <footer class="block-container" id="MasterFooter">
-    <nav class="grid-item navigation">
-        <div class="tabbable tabs-below">
-            <ul id="menu-footer" class="nav nav-tabs menu">
-                <li>
-                    <a href="http://delicious.com/megoth/">delicious</a>
-                </li>
-                <li>
-                    <a href="http://www.facebook.com/arne.hassel">facebook</a>
-                </li>
-                <li>
-                    <a href="https://github.com/megoth/">github</a>
-                </li>
-                <li>
-                    <a href="http://linkedin.com/in/arnehassel">linkedin</a>
-                </li>
-                <li>
-                    <a href="http://twitter.com/megoth/">twitter</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="grid-item">Work by Arne Hassel</div>
 </footer><!-- #MasterFooter -->
 <script type="text/javascript">
 
