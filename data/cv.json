@@ -1,0 +1,190 @@
+{
+    "name": "cv-arne-hassel",
+    "version": "1.0.0",
+    "author": "Arne Hassel <arne.hassel@gmail.com>",
+    "description": "Arne Hassel Curriculum Vitae in JSON",
+    "person": {
+        "firstName": "Arne",
+        "lastName": "Hassel",
+        "email": "arne.hassel@gmail.com"
+    },
+    "knowledge": [
+        {
+            "name": "Computer science",
+            "topics": [
+                {
+                    "name": "Theory",
+                    "skills": [
+                        { "name": "Algorithms", "attained": 4, "aspire": 7 },
+                        { "name": "Computer architecture", "attained": 3, "aspire": 5 },
+                        { "name": "Databases", "attained": 5, "aspire": 8 },
+                        { "name": "Datastructures", "attained": 6, "aspire": 7 },
+                        { "name": "Design patterns", "attained": 7, "aspire": 9 },
+                        { "name": "Logic", "attained": 4, "aspire": 8 },
+                        { "name": "Mathematics", "attained": 5, "aspire": 8 },
+                        { "name": "Modeling", "attained": 7, "aspire": 8 },
+                        { "name": "Qualitative research", "attained": 6, "aspire": 7 },
+                        { "name": "Semantic technologies", "attained": 7, "aspire": 9 },
+                        { "name": "Statistics", "attained": 3, "aspire": 6 },
+                        { "name": "System development", "attained": 7, "aspire": 10 }
+                    ]
+                },
+                {
+                    "name": "Programming",
+                    "skills": [
+                        { "name": "Assembly", "attained": 2, "aspire": 2 },
+                        { "name": "C", "attained": 4, "aspire": 6 },
+                        { "name": "C#", "attained": 5, "aspire": 8 },
+                        { "name": "Documentation", "attained": 5, "aspire": 9 },
+                        { "name": "Java", "attained": 5, "aspire": 6 },
+                        { "name": "JavaScript", "attained": 7, "aspire": 10 },
+                        { "name": "PHP", "attained": 4, "aspire": 6 },
+                        { "name": "Python", "attained": 4, "aspire": 9 },
+                        { "name": "Regex", "attained": 3, "aspire": 9 },
+                        { "name": "Ruby", "attained": 2, "aspire": 6 },
+                        { "name": "Scrum", "attained": 5, "aspire": 7 },
+                        { "name": "SPARQL", "attained": 4, "aspire": 7 },
+                        { "name": "SQL", "attained": 6, "aspire": 7 },
+                        { "name": "Testing (TDD)", "attained": 5, "aspire": 9 },
+                        { "name": "XSLT", "attained": 5, "aspire": 5 }
+                    ]
+                },
+                {
+                    "name": "Stylesheet design",
+                    "skills": [
+                        { "name": "CSS", "attained": 8, "aspire": 10 },
+                        { "name": "LESS", "attained": 6, "aspire": 8 },
+                        { "name": "Sass", "attained": 7, "aspire": 9 },
+                        { "name": "Compass", "attained": 5, "aspire": 8 }
+                    ]
+                },
+                {
+                    "name": "Markup",
+                    "skills": [
+                        { "name": "HTML", "attained": 8, "aspire": 10 },
+                        { "name": "JSON", "attained": 8, "aspire": 10 },
+                        { "name": "XML", "attained": 5, "aspire": 5 }
+                    ]
+                },
+                {
+                    "name": "Design",
+                    "skills": [
+                        { "name": "Design for mobile", "attained": 5, "aspire": 9 },
+                        { "name": "Graphic design", "attained": 3, "aspire": 5 },
+                        { "name": "Information design", "attained": 6, "aspire": 9 },
+                        { "name": "Interaction design", "attained": 4, "aspire": 8 },
+                        { "name": "Responsive design", "attained": 7, "aspire": 10 }
+                    ]
+                },
+                {
+                    "name": "Frameworks",
+                    "skills": [
+                        { "name": ".NET MVC", "attained": 5, "aspire": 8 },
+                        { "name": "Compass", "attained": 6, "aspire": 9 },
+                        { "name": "Django", "attained": 3, "aspire": 8 },
+                        { "name": "jQuery", "attained": 8, "aspire": 10 },
+                        { "name": "Ruby on Rails", "attained": 2, "aspire": 6 },
+                        { "name": "Umbraco", "attained": 5, "aspire": 7 },
+                        { "name": "Wordpress", "attained": 5, "aspire": 7 }
+                    ]
+                },
+                {
+                    "name": "OS",
+                    "skills": [
+                        { "name": "OSX", "attained": 6, "aspire": 7 },
+                        { "name": "Ubuntu Linux", "attained": 4, "aspire": 9 },
+                        { "name": "Windows 7", "attained": 8, "aspire": 8 },
+                        { "name": "Windows 8", "attained": 6, "aspire": 7 },
+                        { "name": "Windows Vista", "attained": 7, "aspire": 7 },
+                        { "name": "Windows XP", "attained": 8, "aspire": 8 }
+                    ]
+                },
+                {
+                    "name": "Program suites",
+                    "skills": [
+                        { "name": "MS Office", "attained": 8, "aspire": 8 },
+                        { "name": "Open Office", "attained": 6, "aspire": 7 },
+                        { "name": "Photoshop CS4", "attained": 4, "aspire": 6 },
+                        { "name": "Visual Studio", "attained": 7, "aspire": 9 }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Personal",
+            "topics": [
+                {
+                    "name": "Attributes",
+                    "skills": [
+                        { "name": "Analytical", "attained": 6, "aspire": 8 },
+                        { "name": "Balanced", "attained": 7, "aspire": 7 },
+                        { "name": "Conscientious", "attained": 7, "aspire": 7 },
+                        { "name": "Creative", "attained": 6, "aspire": 8 },
+                        { "name": "Curious", "attained": 8, "aspire": 8 },
+                        { "name": "Efficient", "attained": 7, "aspire": 8 },
+                        { "name": "Independent", "attained": 8, "aspire": 8 },
+                        { "name": "Loyal", "attained": 9, "aspire": 9 },
+                        { "name": "Positive attitude", "attained": 7, "aspire": 7 },
+                        { "name": "Reasonable", "attained": 7, "aspire": 7 },
+                        { "name": "Responsible", "attained": 7, "aspire": 7 },
+                        { "name": "Structured", "attained": 7, "aspire": 8 }
+                    ]
+                },
+                {
+                    "name": "Ability to",
+                    "skills": [
+                        { "name": "Acquire knowledge", "attained": 7, "aspire": 10 },
+                        { "name": "Cooperate", "attained": 7, "aspire": 8 },
+                        { "name": "Dealing with adversity", "attained": 7, "aspire": 8 },
+                        { "name": "Give criticism", "attained": 6, "aspire": 8 },
+                        { "name": "Give credit", "attained": 5, "aspire": 8 },
+                        { "name": "Listen", "attained": 5, "aspire": 8 },
+                        { "name": "Motivate others", "attained": 7, "aspire": 7 },
+                        { "name": "Say no", "attained": 8, "aspire": 8 }
+                    ]
+                },
+                {
+                    "name": "Social",
+                    "skills": [
+                        { "name": "Accommodating", "attained": 7, "aspire": 7 },
+                        { "name": "Companionable", "attained": 6, "aspire": 6 },
+                        { "name": "Inclusive", "attained": 8, "aspire": 8 },
+                        { "name": "Outgoing", "attained": 6, "aspire": 6 },
+                        { "name": "Service minded", "attained": 7, "aspire": 7 }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Other",
+            "topics": [
+                {
+                    "name": "Administration",
+                    "skills": [
+                        { "name": "Management", "attained": 5, "aspire": 9 },
+                        { "name": "Organizational analysis", "attained": 3, "aspire": 7 },
+                        { "name": "Risk analysis", "attained": 3, "aspire": 7 },
+                        { "name": "SWOT analysis", "attained": 3, "aspire": 5 }
+                    ]
+                },
+                {
+                    "name": "Economics",
+                    "skills": [
+                        { "name": "Accounting", "attained": 6, "aspire": 6 },
+                        { "name": "Budgets", "attained": 6, "aspire": 7 },
+                        { "name": "Journal keeping", "attained": 7, "aspire": 7 },
+                        { "name": "Macro economics", "attained": 5, "aspire": 5 }
+                    ]
+                },
+                {
+                    "name": "Languages",
+                    "skills": [
+                        { "name": "English", "attained": 7, "aspire": 9 },
+                        { "name": "Norwegian", "attained": 9, "aspire": 10 }
+                    ]
+                }
+            ]
+        }
+    ],
+    "license": "MIT"
+}

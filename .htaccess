@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^cv$ index.php?load=cv [L]
