@@ -4,46 +4,25 @@
     if ($file == "cv") {
         $include_file = "cv.php";
     }
+    $base_url = "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 ?><!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
     <meta http-equiv="Content-Type" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I Can Has Web - Arne Hassel on the web</title>
-    <link rel="stylesheet" type="text/css" media="all" href="minimalist/style.css" />
-    <link rel="stylesheet" type="text/css" media="all and (min-width: 30em)" href="minimalist/style.medium.css" />
-    <link rel="stylesheet" type="text/css" media="all and (min-width: 51em)" href="minimalist/style.large.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php echo $base_url; ?>minimalist/style.css" />
+    <link rel="stylesheet" type="text/css" media="all and (min-width: 30em)" href="<?php echo $base_url; ?>minimalist/style.medium.css" />
+    <link rel="stylesheet" type="text/css" media="all and (min-width: 51em)" href="<?php echo $base_url; ?>minimalist/style.large.css" />
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>minimalist/style.medium.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>minimalist/style.large.css" />
+    <![endif]-->
 </head>
 
 <body>
 <div id="SplashContainer" class="block-container">
-    <header id="SplashHeaderMobile" role="banner">
-        <hgroup class="grid-item">
-            <h1>
-                <a href="http://icanhasweb.net/" title="icanhasweb" rel="home">I CAN HAS WEB</a>
-            </h1>
-            <h3 class="site-description">Arne Hassel on the web</h3>
-        </hgroup>
-        <nav class="grid-item navigation-main" role="navigation">
-            <ul id="menu-main" class="nav menu">
-                <li>
-                    <a href="http://icanhasweb.net/blog/">
-                        Blog
-                        <div class="triangle"></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://icanhasweb.net/megoth/">
-                        megoth
-                        <div class="triangle"></div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container-inner grid-row">
-        <?php include($include_file); ?>
-    </div><!-- .container-inner -->
+    <?php include($include_file); ?>
     <div class="push"></div>
 </div>
 <footer class="block-container" id="MasterFooter">

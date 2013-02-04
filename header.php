@@ -1,4 +1,4 @@
-<header id="SplashHeader" role="banner">
+<header class="page-header" role="banner">
     <hgroup class="grid-item">
         <h1>
             <a href="http://icanhasweb.net/" title="icanhasweb" rel="home">
@@ -11,19 +11,19 @@
     <nav class="grid-item navigation-main" role="navigation">
         <ul id="menu-main" class="nav menu">
             <li>
-                <a href="http://icanhasweb.net/blog/">
+                <a href="http://blog.icanhasweb.net/">
                     Blog
                     <div class="triangle"></div>
                 </a>
             </li>
             <li>
-                <a href="http://icanhasweb.net/megoth/">
+                <a href="http://megoth.icanhasweb.net/">
                     megoth
                     <div class="triangle"></div>
                 </a>
             </li>
             <li>
-                <a href="http://icanhasweb.net/cv">
+                <a href="http://cv.icanhasweb.net/">
                     CV
                     <div class="triangle"></div>
                 </a>
