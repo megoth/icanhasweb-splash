@@ -4,7 +4,7 @@
     if ($file == "cv") {
         $include_file = "cv.php";
     }
-    $base_url = "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+    include("config.php");
 ?><!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
